@@ -127,9 +127,9 @@ const updateLead = async (req, res) => {
   if (admin_id.rows.length === 0) {
     return res.status(404).json({ error: "Admin_user not found" });
   }
-  if (admin_id.rows[0].role !== "admin") {
-    return res.status(401).json({ error: "Unauthorized" });
-  }
+  // if (admin_id.rows[0].role !== "admin") {
+  //   return res.status(401).json({ error: "Unauthorized" });
+  // }
 
   try {
     const result = await pool.query(
