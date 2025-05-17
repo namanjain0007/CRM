@@ -85,7 +85,7 @@ export default function ContactForm() {
 
       // Extract error message from response if available
       let errorMessage =
-        "An error occurred while submitting the form. Please try again.";
+        "An error occurred while submitting the form. Please try again later.";
 
       if (err.response) {
         // The request was made and the server responded with a status code
